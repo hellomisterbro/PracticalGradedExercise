@@ -11,9 +11,12 @@ import java.io.IOException;
  */
 public class ShipTripFrame extends JFrame implements ChangeListener, ParametersChangeListener {
 
+    public static final String APPLICATION_TITLE = "warning.png";
+
     public static final int MIN_FRAME_WIDTH = 900;
     public static final int MIN_FRAME_HEIGHT = 580;
     public static final int MIN_CONTROL_PANE_WIDTH = 400;
+
     public static final String NAME_OF_WARNING = "warning.png";
 
     private JSlider speedSlider;
@@ -35,7 +38,7 @@ public class ShipTripFrame extends JFrame implements ChangeListener, ParametersC
 
     public void initUI() {
 
-        setTitle("Ship Trip");
+        setTitle(APPLICATION_TITLE);
         centreWindow();
         setSize(MIN_FRAME_WIDTH, MIN_FRAME_HEIGHT);
         setMinimumSize(new Dimension(MIN_FRAME_WIDTH, MIN_FRAME_HEIGHT));
